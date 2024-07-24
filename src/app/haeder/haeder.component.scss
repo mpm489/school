@@ -1,0 +1,130 @@
+@import'../../styles.scss';
+
+
+.header-container {
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.background {
+    margin-left: 8%;
+    z-index: -1;
+    opacity: 0.1;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/img/business-2998905_1280.png);
+}
+
+.header-left {
+    max-width: 600px;
+
+    p {
+        margin: 16px 0 48px;
+    }
+}
+
+
+.header-right {
+    img {
+        max-width: 400px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container {
+        width: $container-width-md;
+    }
+
+    .header-container {
+        height: 52vh;
+        gap: 0;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .header-left {
+        width: 400px;
+    }
+
+    .header-right img {
+        width: 200px;
+    }
+
+    .background {
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: $container-width-sm;
+    }
+
+    .header-container {
+        height: 100vh;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .header-left {
+        margin-top: 48px;
+
+        p {
+            margin-bottom:24px;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .header-right {
+        img {
+            max-width: 250px;
+            object-fit: cover;
+        }
+    }
+
+    .header-left {
+       max-width: 500px;
+    }
+
+    .header-container{
+        margin-top: 32px;
+    }
+
+    .background{
+        background-position: top;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+
+
+
+<div class="container">
+    <h2>Students' Testimonials</h2>
+
+</div>
+
+<swiper-container 
+[slidesPerView]="slidesPerView"
+[navigation]="true"
+[pagination]="true"
+[breakpoints]="breakpoints">
+    
+    <swiper-slide *ngFor="let slide of [1, 2, 3, 4, 5,6,7,8,9]">
+        <section  class="container testimonials-container ">
+            <div>
+                <article class="testimonial">
+                    <div class="avatar">
+                        <img src="../../assets/img/ich1.png" alt="">
+                    </div>
+                    <div class="testimonial-info">
+                        <h5>Diana Ayi</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati accusantium sint nisi temporibus. Quod, impedit
+                            maiores deserunt mollitia ut vero ipsa laudantium nesciunt.
+                            Fugit ex provident ipsam architecto dolore? Amet?
+                        </p>
+
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+    </swiper-slide>
+    ...
+</swiper-container>

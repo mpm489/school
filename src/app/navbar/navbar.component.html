@@ -1,0 +1,19 @@
+<nav>
+    <div class="container nav-container">
+        <a href="">
+            <h4>MARCIN</h4>
+        </a>
+        <ul class="nav-menu" [class.expanded]="isExpanded">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/achievement">About</a></li>
+            <li><a routerLink="/course">Courses</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+
+        <button (click)="openMenu()" class="menu-button">
+            <mat-icon aria-hidden="false" aria-label="Example menu icon"> {{ isExpanded ? 'close' : 'menu' }}</mat-icon>
+        </button>
+    </div>
+</nav>
+
+

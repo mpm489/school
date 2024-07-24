@@ -1,0 +1,30 @@
+<section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="container faqs-container">
+
+        <article  class="faq" *ngFor="let i of [0,1,2,3,4,5,6,7,8,9]; let j = index">
+
+            <div class="faq-icon" >
+                <mat-icon  aria-hidden="false" aria-label="Toggle FAQ">
+                    {{ isExpanded[j] ? 'remove' : 'add' }}
+                  </mat-icon>            </div>
+
+            <div class="question-answer">
+                <h4 (click)="openFAQ(j)"> 
+                    How do I know the right courses for me?
+                </h4>
+                <p *ngIf="isExpanded[j]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, quidem illum ratione molestiae dolores impedit
+                    fugit! Dicta voluptatem deserunt perferendis a nulla
+                    repellendus, quo ut deleniti? Doloremque, quia! Porro,
+                    facere!
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>

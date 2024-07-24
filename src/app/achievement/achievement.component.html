@@ -1,0 +1,53 @@
+<section class="about-achievements">
+    <div class="container about-achievements-container">
+
+        <div class="about-achievements-left">
+            <img src="../../assets/img/jubeln.png" alt="">
+        </div>
+
+        <div class="about-achievements-right">
+            <h1>Acheivements</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore quis a sequi dolore tenetur beatae eius numquam ex
+                repudiandae, eos, quaerat at soluta officia facilis velit fuga
+                ipsum dignissimos exercitationem.
+                repudiandae, eos, quaerat at soluta officia facilis velit fuga
+                ipsum dignissimos exercitationem.
+            </p>
+            <div class="achievements-cards">
+                <article *ngFor="let i of [0,1,2,]" class="achievement-card">
+                    <span class="achievement-icon">
+                        <mat-icon aria-hidden="false" aria-label="Example menu icon">{{ icons[i] }}</mat-icon>
+                    </span>
+                    <h3>{{ number[i] }}</h3>
+                    <p>{{ text[i] }}</p>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="container team-container">
+
+        <article *ngFor="let i of[0,1,2,3,4,5,6,7,]" class="team-member">
+            <div class="team-member-image">
+                <img src="../../assets/img/character/{{ imges[i] }}" alt="">
+            </div>
+            <div class="team-member-info">
+                <h4>{{ name[i] }}</h4>
+                <p>{{profession[i]}}</p>
+            </div>
+            <div class="team-member-socials">
+                <a href="https://instagram.com" target="_blank"><img src="../../assets/img/insta.png" alt=""></a>
+                <a href="https://facebook.com" target="_blank"><img src="../../assets/img/facebook-2429746_640.png" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="../../assets/img/Twitter Logo 1.png" alt=""></a>
+
+            </div>
+
+        </article>
+
+    </div>
+</section>
